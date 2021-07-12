@@ -1,3 +1,5 @@
+Django is used for Python Web Development and Model Deployment - both of which I will also cover in Fundamental Learning
+
 Firstly, I installed Python from https://www.python.org/ftp/python/3.8.7/python-3.8.7.exe and checked the box of adding it to the PATH.
 Then I wrote pip install django==2.1.5 on Command Prompt
 Then I wrote django-admin on Command Prompt
