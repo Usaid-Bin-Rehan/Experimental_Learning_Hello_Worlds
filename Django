@@ -1,0 +1,31 @@
+Firstly, I installed Python from https://www.python.org/ftp/python/3.8.7/python-3.8.7.exe and checked the box of adding it to the PATH.
+Then I wrote pip install django==2.1.5 on Command Prompt
+Then I wrote django-admin on Command Prompt
+
+Then I wrote django-admin startproject mysite
+Then I visited its location in C/Users/Hp/mysite and it contained manage.py and mysite folder which contained three .py files
+This a primary application that will point to other applications
+Then I right clicked and opened command window there
+
+Then I wrote py -3.8-32 manage.py startapp main to create a main core aspect of website
+Then I visited the nysite folder and it contained a main folder which contained six .py files and migrations folder which contained a .py file
+Then I wrote py - 3.8-32 manage.py runserver on command prompt which then showed me http://... of server
+
+Then I copied the urls.py file from mysite and paste it in the main folder
+First I edited the urls.py of mysite folder:
+from django.urls import path, include 
+path('',include('main.urls')), before the other path
+
+Then I replaced the lines after from django.urls import... in the urls.py of main folder by:
+from . import views
+appname = "main"
+urlpatterns = [
+path("",views.homepage,name="homepage"),
+]
+
+Then I replaced the content of views.py file in main by:
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def homepage(request):
+    return HttpResponse("Hello World by <strong> Usaid Bin Rehan <strong>")
