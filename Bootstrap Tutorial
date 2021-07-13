@@ -1,0 +1,9 @@
+Bootstrap is used for Python Web Development which I will also cover in Fundamental Learning
+
+Go to Codepen and paste the code in the HTML:
+
+<div class="container">
+  <p class="h1 bg-success text-white text-center"> 
+    <br> Hello World by Usaid Bin Rehan <br><br> 
+  </p>
+</div>
