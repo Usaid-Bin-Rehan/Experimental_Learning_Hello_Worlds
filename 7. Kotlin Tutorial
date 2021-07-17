@@ -1,0 +1,25 @@
+Kotlin is a programming language used for Development
+
+1. Go to https://kotlinlang.org/ and in the Try Kotlin Simplest version, type:
+
+package org.kotlinlang.play
+
+fun main() 
+{
+    println("Hello World by Usaid Bin Rehan")
+}
+
+2. In the An Object-oriented Hello, type:
+
+class HelloWorldClass(val name: String) 
+{
+    fun HelloWorldFunction() 
+    {
+        println("Hello World by $name")
+    }
+}
+
+fun main(args: Array<String>) 
+{
+    HelloWorldClass("Usaid Bin Rehan").HelloWorldFunction()
+}
