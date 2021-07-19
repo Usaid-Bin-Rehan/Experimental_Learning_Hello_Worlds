@@ -1,0 +1,20 @@
+FastAPI is the best RESTful API and I will also cover RESTful APIs in Fundamental Learning
+
+1. Go to Google Colab and type each paragraph in a different cell:
+
+!pip install colabcode
+!pip install fastapi
+
+from colabcode import ColabCode
+from fastapi import FastAPI
+
+cc = ColabCode(port=12000, code=False)
+
+app = FastAPI()
+@app.get("/")
+async def read_root():
+  return {"message": "Hello World in FAST API by Usaid Bin Rehan"}
+
+cc.run_app(app=app)
+
+2. Then click on https://......ngrok.io blue coloured underlined link and it will open API in  new tab
