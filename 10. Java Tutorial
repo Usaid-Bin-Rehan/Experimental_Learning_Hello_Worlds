@@ -1,0 +1,17 @@
+Java is used for Development and in Data Careers
+
+1. Go to Programiz Java Online Compiler and type:
+
+class HelloWorld 
+
+{
+    
+	public static void main(String[] args) 
+    
+	{
+        
+		System.out.println("Hello World by Usaid Bin Rehan"); 
+    
+	}
+
+}
